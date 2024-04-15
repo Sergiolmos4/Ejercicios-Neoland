@@ -1,0 +1,55 @@
+#imagen {
+  max-width: 43%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+#resultado {
+  margin-top: -10px;
+  margin-left: -10px;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+}
+
+#bloqueletras {
+  display: flex;
+  flex-direction: row;
+  min-height: 30px;
+  min-width: 200px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#contenido {
+  flex-direction: column;
+  max-height: 100px;
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 5px;
+}
+#palabra_a_adivinar {
+  height: 3em;
+  text-align: center; /* Centra el contenido */
+}
+#palabra_a_adivinar span {
+  vertical-align: bottom;
+  font-size: 2em;
+  border-bottom: 2px solid black;
+  width: 20px;
+  text-align: center;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+/* Media Query para dispositivos móviles */
+@media only screen and (max-width: 1440px) {
+  #palabra_a_adivinar span {
+    font-size: 1.5em; /* Ajusta el tamaño de la letra para pantallas más pequeñas */
+    width: 20px; /* Ajusta el ancho de los elementos */
+    margin-right: 4px; /* Ajusta el margen entre los elementos */
+  }
+}

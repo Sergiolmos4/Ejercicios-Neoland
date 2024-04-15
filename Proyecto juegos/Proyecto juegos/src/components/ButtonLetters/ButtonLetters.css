@@ -1,0 +1,44 @@
+#letras {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#letras button {
+  min-width: 28px;
+  height: 28px;
+  display: flex;
+  padding: 8px 0;
+  background-color: bisque;
+}
+
+#comenzar {
+  min-width: 40px;
+  height: 25px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4px 4px 4px 4px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -140px;
+  border-radius: 40px;
+}
+
+/* Media Query para dispositivos como el MacBook Air */
+@media only screen and (max-width: 1440px) {
+  #letras button {
+    min-width: 24px; /* Ajusta el ancho mínimo de los botones */
+    height: 24px; /* Ajusta la altura de los botones */
+    padding: 4px 0; /* Ajusta el padding de los botones */
+  }
+
+  #comenzar {
+    min-width: 26px; /* Ajusta el ancho mínimo de #comenzar */
+    height: 26px; /* Ajusta la altura de #comenzar */
+    padding: 2px; /* Ajusta el padding de #comenzar */
+    top: -160px; /* Ajusta la posición de #comenzar */
+  }
+}
