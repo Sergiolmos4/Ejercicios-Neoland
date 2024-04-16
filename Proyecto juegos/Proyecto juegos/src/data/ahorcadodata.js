@@ -8,3 +8,4 @@ export const palabras = [
   "hipopotamo" /* 6 */,
   "baloncesto" /* 7 */,
 ];
+/* Palabras a adivinar en el juego*/

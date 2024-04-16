@@ -1,3 +1,4 @@
+/* Botones letras, para pantalla Iphone SE */
 #letras {
   margin-top: 28px;
   display: flex;
@@ -11,7 +12,7 @@
   padding: 8px 0;
   background-color: bisque;
 }
-
+/* Boton comenzar, para Iphone SE */
 #comenzar {
   min-width: 40px;
   height: 25px;
@@ -27,18 +28,18 @@
   border-radius: 40px;
 }
 
-/* Media Query para dispositivos como el MacBook Air */
+/* Media Query para MacBook Air */
 @media only screen and (max-width: 1440px) {
   #letras button {
-    min-width: 24px; /* Ajusta el ancho mínimo de los botones */
-    height: 24px; /* Ajusta la altura de los botones */
-    padding: 4px 0; /* Ajusta el padding de los botones */
+    min-width: 24px;
+    height: 24px;
+    padding: 4px 0;
   }
 
   #comenzar {
-    min-width: 26px; /* Ajusta el ancho mínimo de #comenzar */
-    height: 26px; /* Ajusta la altura de #comenzar */
-    padding: 2px; /* Ajusta el padding de #comenzar */
-    top: -160px; /* Ajusta la posición de #comenzar */
+    min-width: 26px;
+    height: 26px;
+    padding: 2px;
+    top: -160px;
   }
 }

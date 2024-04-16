@@ -1,8 +1,12 @@
-import { PrintButtonLetters } from "../../components";
-import { game_over, id, iniciar } from "../../utils/Ahorca";
+import { PrintButtonLetters } from "../../components"; /* Importar los botones de las letras que forman el juego */
+import {
+  game_over,
+  id,
+  iniciar,
+} from "../../utils/Ahorca"; /* Esencial importar el desarrollo del juego desde utils */
 import "./ahorcado.css";
 const template =
-  () => `<img id="imagen" src="dibujos/img0.png" alt="El gran juego del Ahorcado"/>
+  () => `<img id="imagen" src="dibujos/img0.png" alt="El gran juego del Ahorcado"/> 
 <div>
     <p id="palabra_a_adivinar"></p>
     <button id="jugar">Comenzar</button>
