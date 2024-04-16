@@ -98,6 +98,6 @@ export const game_over = () => {
   for (let i = 0; i < btn_letras.length; i++) {
     btn_letras[i].disabled = true;
   }
-  const btn = id("comenzar");
+  const btn = id("jugar");
   btn.disabled = false;
 };

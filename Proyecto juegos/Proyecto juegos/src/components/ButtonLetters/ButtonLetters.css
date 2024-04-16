@@ -1,35 +1,52 @@
 /* Botones letras, para pantalla Iphone SE */
+/* Scoop global para acceder desde cualquier punto*/
+:root {
+  --margin-top: 28px;
+  --button-width: 28px;
+  --button-height: 28px;
+  --button-padding-vertical: 8px;
+  --button-padding-horizontal: 0;
+  --button-background-color: bisque; /* color fondo de letras vintage */
+  --comenzar-width: 40px;
+  --comenzar-height: 25px;
+  --comenzar-padding-vertical: 4px;
+  --comenzar-padding-horizontal: 4px;
+  --comenzar-top: -140px;
+  --comenzar-border-radius: 40px;
+}
+
 #letras {
-  margin-top: 28px;
+  margin-top: var(--margin-top);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Evitar descolocar letras*/
 }
 
 #letras button {
-  min-width: 28px;
-  height: 28px;
+  min-width: var(--button-width);
+  height: var(--button-height);
   display: flex;
-  padding: 8px 0;
-  background-color: bisque;
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  background-color: var(--button-background-color);
 }
+
 /* Boton comenzar, para Iphone SE */
 #comenzar {
-  min-width: 40px;
-  height: 25px;
-  display: inline-flex;
+  min-width: var(--comenzar-width);
+  height: var(--comenzar-height);
+  display: inline-flex; /* Imagen con fondo blanco ajustada, para Iphone SE */
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 4px 4px 4px 4px;
+  padding: var(--comenzar-padding-vertical) var(--comenzar-padding-horizontal);
   align-content: center;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -140px;
-  border-radius: 40px;
+  top: var(--comenzar-top);
+  border-radius: var(--comenzar-border-radius);
 }
 
 /* Media Query para MacBook Air */
-@media only screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   #letras button {
     min-width: 24px;
     height: 24px;

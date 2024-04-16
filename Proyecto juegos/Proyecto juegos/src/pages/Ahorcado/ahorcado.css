@@ -10,14 +10,14 @@
 #resultado {
   margin-top: -10px;
   margin-left: -10px;
-  flex-direction: column;
+  flex-direction: column; /* Eje principal en vertical*/
   position: relative;
   top: 20px;
 }
 /* Ajustado para poder verlo en dispositivo móvil */
 #bloqueletras {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;    /* Eje principal horizontal  */
   min-height: 30px;
   min-width: 200px;
   flex-wrap: wrap;
@@ -45,16 +45,17 @@
   width: 20px;
   text-align: center;
   margin-right: 6px;
-  display: inline-block;
+  display: inline-block; /* Combina bloques del widht y height */
 }
 
 /* Media Query para otros dispositivos*/
-@media only screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   #palabra_a_adivinar span {
     font-size: 1.5em;
     width: 20px;
     margin-right: 4px;
-  }
+  }  
 }
 /* Estas etiquetas deben estar en el archivo ahorcado.js debidamente referenciadas para el correcto funcionamiento, si no no va a funcionar/*
-/*Se maqueta primero desde dispositivo móviles a tamaños de pantalla mas grandes/* 
+/*Se maqueta primero desde dispositivo móviles a tamaños de pantalla mas grandes/*
+ 
